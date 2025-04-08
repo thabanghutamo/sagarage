@@ -1,0 +1,526 @@
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #FFD700; /* dark yellow background */
+    color: #000; /* black text */
+    line-height: 1.6;
+    scroll-behavior: smooth; /* smooth scrolling */
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    background-color: #333; /* dark background */
+    color: #FFD700; /* yellow text */
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+header .logo {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+header .logo img {
+    max-width: 100px; /* Adjust the size of the logo */
+    height: auto;
+    border-radius: 5px; /* Optional: rounded corners for the logo */
+}
+
+header h1 {
+    font-size: 1.5em;
+    margin: 0;
+    color: #FFD700; /* yellow text */
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #FFD700; /* yellow links */
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #FFF; /* white text on hover */
+}
+
+section {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.hero {
+    height: 60vh;
+    background-image: url('3.jpg'); /* Replace with your hero image */
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #FFF; /* white text for contrast */
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7); /* shadow effect for text */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); /* shadow effect for the section */
+}
+
+.hero-content h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+    font-weight: bold; /* make text bold */
+}
+
+.hero-content p {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+    font-weight: bold; /* make text bold */
+}
+
+.hero-content .btn {
+    padding: 10px 20px;
+    background-color: #333; /* dark button */
+    color: #FFD700; /* yellow text */
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.hero-content .btn:hover {
+    background-color: #555; /* hover effect */
+    color: #FFF; /* white text on hover */
+}
+
+footer {
+    background-color: #333; /* dark footer */
+    color: #FFD700; /* yellow text */
+    text-align: center;
+    padding: 20px;
+}
+
+.services {
+    padding: 40px 20px;
+    background-color: #FFD700; /* consistent yellow background */
+    text-align: center;
+}
+
+.services h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #000; /* black headings */
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.service-grid {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr); /* 6 items per row */
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.service-grid .icon {
+    font-size: 3em;
+    color: #333; /* dark icon color */
+    margin-bottom: 10px;
+}
+
+.service-grid h3 {
+    font-size: 1.2em;
+    font-weight: bold;
+    margin: 0;
+    color: #000; /* black text */
+    text-transform: capitalize;
+}
+
+.service-item {
+    text-align: center;
+    color: #000; /* black text */
+}
+
+.service-item .icon {
+    font-size: 3em;
+    color: #333; /* dark icon color */
+    margin-bottom: 10px;
+}
+
+.service-item h3 {
+    font-size: 1.2em;
+    font-weight: bold;
+    margin: 0;
+    color: #000; /* black text */
+}
+
+.service-item p {
+    font-size: 1em;
+    color: #555; /* slightly lighter text */
+    margin: 0;
+}
+
+.pricing, .booking, .contact, .gallery, .testimonials {
+    padding: 40px;
+    background-color: #FFD700; /* consistent yellow background */
+    text-align: center;
+}
+
+.pricing h2, .booking h2, .contact h2, .gallery h2, .testimonials h2 {
+    font-size: 2em;
+    margin-bottom: 30px;
+    color: #000; /* black headings */
+}
+
+.service-list, .gallery-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+
+.service-item, .testimonial {
+    background-color: #FFF; /* white cards */
+    padding: 20px;
+    width: 280px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* modern shadow */
+    color: #000; /* black text */
+}
+
+.service-item h3, .testimonial strong {
+    color: #333; /* dark text for headings */
+}
+
+.service-item p, .testimonial p {
+    color: #555; /* slightly lighter text */
+}
+
+table {
+    margin: 0 auto;
+    border-collapse: collapse;
+    width: 80%;
+    max-width: 700px;
+    background-color: #FFF; /* white table */
+    color: #000; /* black text */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* modern shadow */
+}
+
+table thead {
+    background-color: #333; /* dark header */
+    color: #FFD700; /* yellow text */
+}
+
+table th, table td {
+    padding: 15px;
+    border: 1px solid #ccc;
+    text-align: left;
+}
+
+table tr:nth-child(even) {
+    background-color: #f9f9f9; /* light row background */
+}
+
+form label {
+    display: block;
+    margin-top: 15px;
+    font-weight: bold;
+    color: #000; /* black text */
+}
+
+form input, form select, form textarea, form button {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+form button {
+    background-color: #333; /* dark button */
+    color: #FFD700; /* yellow text */
+    cursor: pointer;
+    margin-top: 20px;
+    transition: background-color 0.3s ease;
+}
+
+form button:hover {
+    background-color: #555; /* hover effect */
+    color: #FFF; /* white text on hover */
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.gallery-grid img {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* modern shadow */
+}
+
+#confirmationMsg, #contactMsg {
+    margin-top: 20px;
+    font-weight: bold;
+    text-align: center;
+    color: #000; /* black text */
+}
+
+.contact {
+    padding: 60px 20px;
+    background-color: #FFD700; /* consistent yellow background */
+    text-align: center;
+}
+
+.contact-container {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: #FFF; /* white container */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* modern shadow */
+}
+
+.contact h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #000; /* black headings */
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.contact p {
+    font-size: 1.2em;
+    color: #555; /* slightly lighter text */
+    margin-bottom: 20px;
+}
+
+.contact form label {
+    display: block;
+    margin-top: 15px;
+    font-weight: bold;
+    color: #000; /* black text */
+}
+
+.contact form input,
+.contact form textarea,
+.contact form button {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+.contact form button {
+    background-color: #333; /* dark button */
+    color: #FFD700; /* yellow text */
+    cursor: pointer;
+    margin-top: 20px;
+    transition: background-color 0.3s ease;
+}
+
+.contact form button:hover {
+    background-color: #555; /* hover effect */
+    color: #FFF; /* white text on hover */
+}
+
+.about {
+    padding: 60px 20px;
+    background-color: #FFD700; /* consistent yellow background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap; /* Enable wrapping for smaller screens */
+}
+
+.about-container {
+    display: flex;
+    flex-wrap: wrap; /* Ensure content wraps on smaller screens */
+    max-width: 1200px;
+    gap: 20px;
+    align-items: center;
+}
+
+.about-image {
+    flex: 1;
+    text-align: center;
+    min-width: 460px; /* Ensure the image has a minimum width */
+}
+
+.about-image img {
+    max-width: 100%; /* Ensure the image scales properly */
+    width: 150%; /* Adjust the width to make it larger */
+    border-radius: 20px; /* Keep rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Modern shadow */
+    animation: slideInLeft 1s ease-in-out; /* Motion effect */
+}
+
+.about-text {
+    flex: 2;
+    color: #000; /* black text */
+    min-width: 270px; /* Ensure the text has a minimum width */
+}
+
+.about-text h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.about-text p {
+    font-size: 1.2em;
+    line-height: 1.3;
+    margin-bottom: 20px;
+    word-wrap: break-word; /* Ensure long words break properly */
+}
+
+/* Keyframes for motion effect */
+@keyframes slideInLeft {
+    from {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.trusted {
+    padding: 20px 20px;
+    background-color: #ffffffda; /* white background for contrast */
+    text-align: center;
+}
+
+.trusted h2 {
+    font-size: 2.5em;
+    margin-bottom: 50px;
+    color: #000; /* black text */
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.trusted-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 60px;
+}
+
+.trusted-list li {
+    flex: 1 1 150px; /* Ensure logos are responsive */
+    max-width: 150px;
+    text-align: center;
+}
+
+.trusted-list img {
+    max-width: 120%;
+    height: auto;
+    border-radius: 10px; /* Optional: rounded corners for logos */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional: shadow for logos */
+    transition: transform 0.3s ease;
+}
+
+.trusted-list img:hover {
+    transform: scale(1.1); /* Slight zoom effect on hover */
+}
+
+.book-now {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.book-now .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #333; /* dark button */
+    color: #FFD700; /* yellow text */
+    text-decoration: none;
+    font-size: 1.2em;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.book-now .btn:hover {
+    background-color: #555; /* hover effect */
+    color: #FFF; /* white text on hover */
+    transform: scale(1.05); /* slight zoom effect */
+}
+
+.booking {
+    padding: 60px 20px;
+    background-color: #FFD700; /* consistent yellow background */
+    text-align: center;
+}
+
+.booking-container {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: #FFF; /* white container */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* modern shadow */
+}
+
+.booking h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #000; /* black headings */
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.booking form label {
+    display: block;
+    margin-top: 15px;
+    font-weight: bold;
+    color: #000; /* black text */
+}
+
+.booking form input,
+.booking form select,
+.booking form button {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+.booking form button {
+    background-color: #333; /* dark button */
+    color: #FFD700; /* yellow text */
+    cursor: pointer;
+    margin-top: 20px;
+    transition: background-color 0.3s ease;
+}
+
+.booking form button:hover {
+    background-color: #555; /* hover effect */
+    color: #FFF; /* white text on hover */
+}

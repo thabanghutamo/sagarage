@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Book an Appointment | Garage Pro</title>
+  <link rel="stylesheet" href="style.css" />
+  <script defer src="main.js"></script>
+  <style>
+    footer {
+      background-color: #333; /* dark footer */
+      color: #FFD700; /* yellow text */
+      text-align: center;
+      padding: 20px;
+    }
+
+    .footer-container {
+      max-width: 800px;
+      margin: 0 auto;
+      text-align: center;
+    }
+
+    .footer-info {
+      margin-bottom: 20px;
+    }
+
+    .footer-info h3 {
+      font-size: 1.5em;
+      margin-bottom: 10px;
+      color: #FFD700; /* yellow text */
+    }
+
+    .footer-info p {
+      font-size: 1em;
+      margin: 5px 0;
+      color: #FFF; /* white text */
+    }
+
+    .footer-info a {
+      color: #FFD700; /* yellow links */
+      text-decoration: none;
+    }
+
+    .footer-info a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <a href="index.html">
+        <img src="sa1.jpg" alt="Garage Pro Logo" />
+      </a>
+  
+    </div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="booking.html">Book Now</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="booking" class="booking">
+    <div class="booking-container">
+      <h2>Book an Appointment</h2>
+      <form id="bookingForm">
+        <label for="name">Full Name:</label>
+        <input type="text" id="name" name="name" required />
+
+        <label for="phone">Phone Number:</label>
+        <input type="tel" id="phone" name="phone" required pattern="[0-9]{10}" placeholder="e.g. 0123456789" />
+
+        <label for="email">Email Address:</label>
+        <input type="email" id="email" name="email" required />
+
+        <label for="service">Service Needed:</label>
+        <select id="service" name="service" required onchange="toggleOtherServiceInput()">
+          <option value="">-- Select Service --</option>
+          <option value="Oil Change">Oil Change</option>
+          <option value="Brake Repair">Brake Repair</option>
+          <option value="Diagnostics">Engine Diagnostics</option>
+          <option value="Tyre Services">Tyre Services</option>
+          <option value="Battery Replacement">Battery Replacement</option>
+          <option value="Full Inspection">Full Vehicle Inspection</option>
+          <option value="Other">Other</option>
+        </select>
+
+        <div id="otherServiceContainer" style="display: none;">
+          <label for="otherService">Please Specify:</label>
+          <input type="text" id="otherService" name="otherService" placeholder="Enter your service" />
+        </div>
+
+        <label for="date">Preferred Date:</label>
+        <input type="date" id="date" name="date" required />
+
+        <label for="time">Preferred Time:</label>
+        <input type="time" id="time" name="time" required />
+
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+  </section>
+
+  <footer>
+    <div class="footer-container">
+      <div class="footer-info">
+        <h3>Contact Information</h3>
+        <p><strong>Location:</strong>Cnr Kent & All black road Anderbolt, Boksburg 1459</p>
+        <p><strong>Phone:</strong> +27 11 902 0119</p>
+        <p><strong>Email:</strong> <a href="mailto:info@sagarage.co.za">info@sagarage.co.za</a></p>
+      </div>
+      <p>&copy; 2025 The SA Garage. All rights reserved.</p>
+    </div>
+  </footer>
+</body>
+</html>
